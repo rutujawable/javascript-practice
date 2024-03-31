@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>js function</title>
+</head>
+<body>
+
+<script>
+    
+    const radius = 5;
+
+     function areaOfCircle()
+     {
+        
+      const area = 3.14 * radius * radius;
+      console.log("The area of the circle is" +area);
+
+     }
+
+     areaOfCircle();
+
+
+
+    //   argument and return
+
+
+    function areaOfTriangle( base,height)
+    {
+
+      const area = 0.5 * base * height;
+      return area;
+
+      }
+     console.log("Area of triangle is" +areaOfTriangle(12,5));
+       
+
+
+    //  argument and no return
+
+    function areaOfRectangle(lenght,breadth)
+    {
+     const area = lenght*breadth;
+     console.log(` The area of rectangle is ${area}`);
+    }
+
+    areaOfRectangle(10,20);
+
+
+
+    // no argument but return
+    const side = 20;
+  function areaOfSquare()    
+    {
+        const area = side*side;
+        return area;
+    }
+    console.log(` The area of square is${areaOfSquare()}`)
+
+    
+
+    // no argument and no return
+
+    function perimeterOfSquare()
+    {
+    const side =5;
+    const perimeter = 4*side;
+    console.log(` The perimeter of square is ${perimeter}`);
+
+    }
+    perimeterOfSquare();
+
+
+</script> 
+</body>
+</html>
