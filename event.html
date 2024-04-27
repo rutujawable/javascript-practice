@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>events</title>
+</head>
+<body onload="onload()">
+    <button type="submit" onclick="onclick()"> button</button>
+
+    <button type="submit" ondblclick="ondblclick()"> button</button>
+
+    <input type="text" placeholder="name" onkeypress="onkeypress()">
+
+    <input type="text" placeholder="name" onkeydown="onkeydown()">
+
+    <input type="text" placeholder="name" onkeyup="onkeyup()">
+
+    <input type="text" placeholder="name" value="rutu" onchange="(onchange())"><br>
+
+    <img src="pizza.png" alt="pizza" onmouseover="onmouseover()">
+
+    <img src="pizza.png" alt="pizza" onmousemove="onmousemove()">
+
+    <img src="pizza.png" alt="pizza" onmouseout="onmouseout()">
+
+
+
+    <script>
+      function onclick(){
+
+        console.log("onclick");
+      }
+
+      function ondblclick(){
+
+
+       console.log("ondblclick");
+}
+
+ function onkeypress()
+{
+    console.log("onkeypress"); 
+}
+
+function onkeydown()
+{
+    console.log("keydown"); 
+}
+
+function onkeyup(){
+    console.log("keyup")
+}
+
+function onchange(){
+
+    console.log("onchange")
+}
+
+function onmouseover(){
+ 
+    console.log("mouseover")
+}
+
+ function onmousemove(){
+ 
+ console.log("mousemove")
+}
+
+ function onmouseout(){
+ 
+ console.log("mouseout")
+}
+
+ function onload()
+{
+    alert('are you sure you want to go further')
+}
+
+
+
+    </script>
+    
+</body>
+</html>

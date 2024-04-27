@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>DOM manipulation</title>
+
+    <style>
+        body{
+            background-color: #FF3CAC;
+        background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+        min-height: 100%vh;
+
+        }
+
+        div{
+            background-color: white;
+            margin: 30px auto;
+            width: 500px;
+            border-radius: 5px;
+            padding: 40px;
+           
+        }
+        .title{
+            margin: 50px 400px;
+            color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: x-large;
+            color: white;
+        }
+        .input-css{
+            margin: 20px 90px;
+            height: 30px;
+            width: 250px;
+            font-size: larger;
+           
+            border-radius: 6px;
+        }
+       
+        .btn{
+           
+            padding: 5px;
+            margin: 10px;
+            margin-left: 40px;
+            width: 150px;
+            background-color: blue;
+            cursor: pointer;
+            color: white;
+            border-radius: 5px;
+            font-size: 20px;
+            display: inline;
+            
+        }
+        .btn-1{
+            padding: 5px;
+            margin-left: 40px;
+            width: 150px;
+            background-color: blue;
+            cursor: pointer;
+            color: white;
+            border-radius: 5px;
+            font-size: 20px;
+            display: inline;
+            
+            
+
+        }
+
+        .answer{
+            
+            margin-left: 150px;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+     <p class="title"> AREA OF THE SQUARE CALCULATOR </p>
+
+    <div>
+        <input type="text" class="input-css" placeholder="Enter side of square" id="side">
+
+        <p id="ans" class="answer" >  </p>
+        <button type="submit" onclick="calculate()" class="btn"> calculate</button>
+        <button type="submit" onclick="reset()" class="btn-1"> reset
+        </button>
+
+    </div>
+
+ <script>
+ function calculate(){
+    const side = document.getElementById("side");
+    const answer = parseFloat(side.value)*  parseFloat(side.value);
+    const ans= document.getElementById("ans");
+    ans.innerHTML = ("<b>Answer:</b>" +answer+  "m <sup>2<sup>")
+ }
+
+ function reset(){
+    const side = document.getElementById("side");
+    side.innerHTML="";
+    const ans= document.getElementById("ans");
+    ans.innerText="";
+ }
+
+ </script>
+    
+</body>
+</html>

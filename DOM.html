@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+
+    message: <span id="message"></span><br>
+
+    <button type="button" onclick="sayhello()"> sayhello</button>
+
+    <button type="submit" onclick="saygoodmorning()"> saygoodmorning</button>
+
+    <script>
+     function sayhello()
+     {
+        const element= document.getElementById("message");
+        element.innerText="hello";
+     }
+
+     function saygoodmorning()
+     {
+        const element= document.getElementById("message");
+        element.innerText="good morning";
+     }
+
+
+
+    </script>
+    
+</body>
+</html>
